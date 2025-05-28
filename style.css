@@ -13,6 +13,15 @@ header.home {
   color: #4e0d0d;
 }
 
+body.guide {
+  background-color: #e0c58f;
+  color: #4e0d0d;
+}
+header.guide {
+  background-color: #4e0d0d;
+  color: #ffffff;
+}
+
 .center-img {
   display: block;
   margin: 20px auto;
