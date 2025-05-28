@@ -1,59 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', sans-serif;
   background-color: #F3EEED;
   color: #0C2924;
 }
 
 header {
   background-color: #0C2924;
-  color: #F3EEED;
-  padding: 20px;
+  padding: 40px 0;
   text-align: center;
+  color: #F3EEED;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.image-section {
+  flex: 1;
 }
 
 .oval-img {
-  border-radius: 50% / 35%;
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
   object-fit: cover;
-  width: 300px;
-  height: 400px;
-  display: block;
-  margin-top: 20px;
+  border-radius: 50% / 35%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
-  margin: 0 0 10px;
-}
-
-main {
-  padding: 20px;
-}
-
-a {
-  color: #567470;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.step-list {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-top: 30px;
+  padding-left: 20px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+table, th, td {
+  border: 1px solid #567470;
 }
 
 th, td {
-  border: 1px solid #567470;
-  padding: 10px;
+  padding: 12px 15px;
   text-align: left;
 }
 
-img {
-  margin-top: 20px;
-  border-radius: 10px;
-  max-width: 100%;
+th {
+  background-color: #567470;
+  color: #F3EEED;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #567470;
+  color: #F3EEED;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0C2924;
+}
