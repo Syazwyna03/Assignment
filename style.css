@@ -7,14 +7,69 @@ body.home {
   background-color: #4e0d0d;
   color: #ffffff;
 }
+
 header.home {
   background-color: #e0c58f;
   color: #4e0d0d;
 }
 
-body.guide {
-  background-color: #e0c58f;
-  color: #4e0d0d;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #2E1A1A; /* dark maroon text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2E1A1A; /* dark maroon */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+.flowchart {
+    padding: 40px 20px;
+    background-color: #F5EBDD; /* sand nude */
+    display: flex;
+    justify-content: center;
+}
+
+.flowchart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+}
+.step {
+    background-color: #fff;
+    border: 3px solid #2E1A1A;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.step::after {
+    content: "↓";
+    font-size: 24px;
+    color: #2E1A1A;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+.flowchart ul li:last-child .step::after {
+    display: none; 
+}
+
 }
 header.guide {
   background-color: #4e0d0d;
